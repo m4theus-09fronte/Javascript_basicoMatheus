@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filmes e series</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Cadastre seu filme</h2>
+            <p>Use o formulário abaixo para montar sua lista de filmes favoritos.</p>
+        </div>
+    </section>
+
+    <main class="cabeça">
+        <form id="formulario">
+            <div class="campo">
+                <label for="nome">filme</label>
+                <input type="text" id="nome" name="nome" placeholder="Vingadores" required minlength="3">
+            </div>
+
+            <div class="campo">
+                <label for="ano">ano do filme</label>
+                <input type="number" id="ano" name="ano" placeholder="2014" required>
+            </div>
+
+            <div class="campo">
+                <label for="genero">genero</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="ação">ação</option>
+                    <option value="suspense">suspense</option>  
+                    <option value="comedia">comedia</option>
+                    <option value="terror">terror</option>
+                    <option value="documentario">documentario</option>
+                    <option value="drama">drama</option>
+                    <option value="ficcao">ficção</option>
+                    <option value="fantasia">fantasia</option>
+                </select>
+            </div>
+
+            <button type="button" class="buttn" onclick="mostraFilme()">cadastrar</button>
+            <p id="resultado"></p>
+        </form>
+
+        <h3 class="lista-titulo">Filmes cadastrados</h3>
+        <div id="lista-filmes" class="lista-filmes"></div>
+
+        
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
