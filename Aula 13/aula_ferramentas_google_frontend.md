@@ -97,7 +97,7 @@ index.html
     <meta name="description" content="Landing page de exemplo para estudar ferramentas Google no desenvolvimento Front-end.">
 
     <!-- Importação do arquivo CSS local -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -145,7 +145,7 @@ index.html
     </footer>
 
     <!-- Importação do JavaScript no final para carregar após o HTML -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 ```
